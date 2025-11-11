@@ -188,8 +188,9 @@ img {
   align-self: center;
 }
 .home__title {
-  font-size: 1.9rem;
-  margin-bottom: var(--mb-5);
+  font-size: 1.7rem;    /* plus petit */
+  line-height: 1.2;
+  margin-bottom: var(--mb-4);
 }
 .home__title-color {
   color: var(--first-color);
@@ -211,13 +212,14 @@ img {
   position: absolute;
   right: 0;
   bottom: 0;
-  width: 220px;
+  width: 230px;       /* AVANT: 220px */
 }
 .home__blob {
   fill: var(--first-color);
 }
 .home__blob-img {
-  width: 360px;
+  width: 230px;       /* AVANT: 360px */
+  transform: translate(10px, 20px); /* ajuste la position dans le bleu */
 }
 
 /*BUTTONS*/
@@ -396,9 +398,15 @@ img {
     margin-right: var(--mb-4);
   }
   .home__img {
-    width: 300px;
-    bottom: 25%;
+    width: 2600px;
+    bottom: 10%;
   }
+  
+.home__photo {
+  width: 340px;
+  border-radius: 50%; /* facultatif, pour un effet rond */
+  object-fit: cover;
+}
   .about__container {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
