@@ -15,9 +15,7 @@
       object-fit: cover;
     }
     @media screen and (min-width: 768px) {
-      .work__img img {
-        height: 200px;
-      }
+      .work__img img { height: 200px; }
     }
     .skills__img {
       width: 100%;
@@ -25,9 +23,7 @@
       object-fit: cover;
     }
     @media screen and (min-width: 768px) {
-      .skills__img {
-        height: 320px;
-      }
+      .skills__img { height: 320px; }
     }
   </style>
 </head>
@@ -37,14 +33,15 @@
   <header class="l-header">
     <nav class="nav bd-grid">
       <div>
-        <a href="#home" class="nav__logo">Zeineb Chabchoub</a>
+        <!-- Start from About -->
+        <a href="#about" class="nav__logo">Zeineb Chabchoub</a>
       </div>
 
       <div class="nav__menu" id="nav-menu">
         <ul class="nav__list">
-          <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
-          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-          <li class="nav__item"><a href="#case-studies" class="nav__link">Case Studies</a></li>
+          <!-- Removed Home -->
+          <li class="nav__item"><a href="#about" class="nav__link active-link">About</a></li>
+          <li class="nav__item"><a href="#case-studies" class="nav__link">Selected Projects</a></li>
           <li class="nav__item"><a href="#speaking" class="nav__link">Speaking</a></li>
           <li class="nav__item"><a href="#contact" class="nav__link">Request a Meeting</a></li>
         </ul>
@@ -58,89 +55,94 @@
 
   <main class="l-main">
 
-<!--===== ABOUT =====-->
-<section class="about section" id="about">
-  <h2 class="section-title">About</h2>
+    <!--===== ABOUT =====-->
+    <section class="about section" id="about">
+      <h2 class="section-title">About</h2>
 
-  <div class="about__container bd-grid">
-    <div class="about__img">
-      <img src="assets/img/zeineb.JPEG" alt="Zeineb Chabchoub" />
-    </div>
+      <div class="about__container bd-grid">
+        <div class="about__img">
+          <img src="assets/img/zeineb.JPEG" alt="Zeineb Chabchoub" />
+        </div>
 
-    <div>
-      <h2 class="about__subtitle">I'm Zeineb</h2>
+        <div>
+          <h2 class="about__subtitle">I'm Zeineb</h2>
 
-      <p class="about__text">
-        I’m a startup ecosystem operator with experience across North Africa, Europe, and the U.S.
-        I started as a founder, which shaped how I work: I read context quickly, respect institutional
-        realities, and focus on what actually moves founders forward.
-        <br /><br />
-        I’ve worked closely with founders from diverse backgrounds, across geographies
-        (North Africa, Europe, and the U.S.) and academic paths, including university spin-outs,
-        experienced professionals, and newly graduated founders.
-        <br /><br />
-        My north star is simple: help founders create value and reach markets and capital
-        without losing momentum.
-      </p>
+          <p class="about__text">
+            I’m a startup ecosystem operator with experience across North Africa, Europe, and the U.S.
+            I started as a founder, which shaped how I work: I read context quickly, respect institutional
+            realities, and focus on what actually moves founders forward.
+            <br /><br />
+            I’ve worked closely with founders from diverse backgrounds, across geographies
+            (North Africa, Europe, and the U.S.) and academic paths, including university spin-outs,
+            experienced professionals, and newly graduated founders.
+            <br /><br />
+            My north star is simple: help founders create value and reach markets and capital
+            without losing momentum.
+          </p>
 
-      <p style="margin-top:0.75rem;">
-        <strong>Languages:</strong> Arabic (native) · English · French
-      </p>
+          <p style="margin-top:0.75rem;">
+            <strong>Languages:</strong> Arabic (native) · English · French
+          </p>
 
-      <!-- CTA buttons (same layout as Home) -->
-      <div style="margin-top:1.5rem;">
-        <a
-          href="https://calendly.com/zeinebch/1-1-zeineb"
-          class="button"
-          target="_blank"
-          rel="noopener"
-        >
-          <i class='bx bx-calendar-event' style="margin-right:8px;"></i>
-          Book a meeting
-        </a>
+          <!-- CTA buttons (same layout as Home) -->
+          <div style="margin-top:1.5rem;">
+            <a
+              href="https://calendly.com/zeinebch/1-1-zeineb"
+              class="button"
+              target="_blank"
+              rel="noopener"
+            >
+              <i class='bx bx-calendar-event' style="margin-right:8px;"></i>
+              Book a meeting
+            </a>
 
-        <a
-          href="https://www.linkedin.com/in/zeineb-chabchoub/"
-          class="button"
-          target="_blank"
-          rel="noopener"
-          style="margin-left:0.75rem;"
-        >
-          <i class='bx bxl-linkedin' style="margin-right:8px;"></i>
-          LinkedIn
-        </a>
+            <a
+              href="https://www.linkedin.com/in/zeineb-chabchoub/"
+              class="button"
+              target="_blank"
+              rel="noopener"
+              style="margin-left:0.75rem;"
+            >
+              <i class='bx bxl-linkedin' style="margin-right:8px;"></i>
+              LinkedIn
+            </a>
 
-        <a
-          href="https://medium.com/@zeineb.chabchoub.01"
-          class="button"
-          target="_blank"
-          rel="noopener"
-          style="margin-left:0.75rem;"
-        >
-          <i class='bx bx-link-external' style="margin-right:8px;"></i>
-          Medium
-        </a>
+            <a
+              href="https://medium.com/@zeineb.chabchoub.01"
+              class="button"
+              target="_blank"
+              rel="noopener"
+              style="margin-left:0.75rem;"
+            >
+              <i class='bx bx-link-external' style="margin-right:8px;"></i>
+              Medium
+            </a>
+          </div>
+
+          <p style="margin-top:0.9rem;">
+            Reference could be provided upon request —
+            <a
+              href="https://calendly.com/zeinebch/1-1-zeineb"
+              target="_blank"
+              rel="noopener"
+              style="text-decoration:underline;"
+            >
+              request a reference via meeting
+            </a>.
+          </p>
+        </div>
       </div>
+    </section>
 
-      <p style="margin-top:0.9rem;">
-        Reference could be provided upon request —
-        <a
-          href="https://calendly.com/zeinebch/1-1-zeineb"
-          target="_blank"
-          rel="noopener"
-          style="text-decoration:underline;"
-        >
-          request a reference via meeting
-        </a>.
-      </p>
-    </div>
-  </div>
-</section>
-
-
-    <!--===== CASE STUDIES =====-->
+    <!--===== SELECTED PROJECTS =====-->
     <section class="skills section" id="case-studies">
       <h2 class="section-title">Selected Projects</h2>
+
+      <!-- Transition: University of Utah -->
+      <div class="bd-grid" style="margin-bottom:1.25rem;">
+        <h3 style="text-align:center; font-weight:600; margin-bottom:0.5rem;">University of Utah</h3>
+        <div style="height:1px; background:rgba(18,18,18,0.12);"></div>
+      </div>
 
       <!-- Doman Innovation Studio -->
       <div class="skills__container bd-grid">
@@ -174,7 +176,7 @@
 
           <p style="margin-top:0.5rem;">
             <a
-              href="https://domanstudio.notion.site/U-of-U-Venture-Ecosystem-Map-2392f5728afe80c09fe9e8b964073ad3?source=copy_link
+              href="https://domanstudio.notion.site/U-of-U-Venture-Ecosystem-Map-2392f5728afe80c09fe9e8b964073ad3?source=copy_link"
               target="_blank"
               rel="noopener"
             >
@@ -195,7 +197,7 @@
         </div>
 
         <div>
-          <h2 class="skills__subtitle">MBA Consulting Projects — University of Utah</h2>
+          <h2 class="skills__subtitle">David Eccles School of Business</h2>
           <p class="skills__text">
             MBA Student Consultant | Salt Lake City, UT | Sep 2024 – Apr 2025<br />
             Scope: Applied strategy and commercialization work across early-stage ventures and research-driven spin-outs.
@@ -212,6 +214,12 @@
             </li>
           </ul>
         </div>
+      </div>
+
+      <!-- Transition: GIZ Tunisia -->
+      <div class="bd-grid" style="margin:2.25rem auto 1.25rem;">
+        <h3 style="text-align:center; font-weight:600; margin-bottom:0.5rem;">GIZ Tunisia</h3>
+        <div style="height:1px; background:rgba(18,18,18,0.12);"></div>
       </div>
 
       <!-- GIZ Tunisia -->
@@ -245,7 +253,13 @@
         </div>
       </div>
 
-      <!-- Alien Dimension -->
+      <!-- Transition: Alien Dimension + Newsletter -->
+      <div class="bd-grid" style="margin:2.25rem auto 1.25rem;">
+        <h3 style="text-align:center; font-weight:600; margin-bottom:0.5rem;">Alien Dimension + Newsletter</h3>
+        <div style="height:1px; background:rgba(18,18,18,0.12);"></div>
+      </div>
+
+      <!-- Alien Dimension (minimalist, text-first, no extra article images) -->
       <div class="skills__container bd-grid">
         <div>
           <h2 class="skills__subtitle">Alien Dimension — AR EdTech (Founder)</h2>
@@ -261,10 +275,21 @@
           <p style="margin-top:0.75rem;">
             <strong>Lessons learned:</strong> Validate the payer (not just the user), be ruthless about burn and scope, write cofounder agreements early, and protect founder energy.
           </p>
+
           <p style="margin-top:0.5rem;">
             <a href="http://www.aliendimension.com/#/" target="_blank" rel="noopener">Site</a> ·
-            <a href="https://www.linkedin.com/company/alien-dimension" target="_blank" rel="noopener">LinkedIn</a> ·
-            <a href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7322056423377367040" target="_blank" rel="noopener">Newsletter</a>
+            <a href="https://www.linkedin.com/company/alien-dimension" target="_blank" rel="noopener">LinkedIn</a>
+          </p>
+
+          <p style="margin-top:0.9rem;">
+            <strong>Newsletter:</strong>
+            <a
+              href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7322056423377367040"
+              target="_blank"
+              rel="noopener"
+            >
+              Subscribe
+            </a>
           </p>
         </div>
 
@@ -272,6 +297,7 @@
           <img src="assets/img/GITEX Africa.png" alt="Alien Dimension" class="skills__img" />
         </div>
       </div>
+
     </section>
 
     <!--===== SPEAKING & MEDIA =====-->
@@ -314,25 +340,6 @@
             <img src="assets/img/Berlin.jpeg" alt="Young Founders Program (Berlin, 2023)" />
           </div>
           <h3 class="work__title">Young Founders Program (Berlin, 2023)</h3>
-        </div>
-
-        <div class="work__item">
-          <div class="work__img">
-            <img src="assets/img/slushDjerba.jpeg" alt="Startup Lessons Newsletter" />
-          </div>
-          <h3 class="work__title">Startup Lessons Newsletter</h3>
-          <p style="text-align:center;">
-            8K+ followers, sharing founder case studies and ecosystem insights across MENA.
-          </p>
-          <a
-            href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7322056423377367040"
-            target="_blank"
-            rel="noopener"
-            class="button"
-            style="display:block; margin:10px auto 0; width:max-content;"
-          >
-            <i class='bx bx-news' style="margin-right:8px;"></i> Subscribe
-          </a>
         </div>
       </div>
     </section>
