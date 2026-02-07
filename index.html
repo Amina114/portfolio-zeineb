@@ -7,8 +7,9 @@
   <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet" />
   <title>Zeineb Chabchoub | Startup Ecosystem Operator</title>
 
-  <!-- Light image cropping helpers (no CSS file changes needed) -->
+  <!-- Light helpers + minimalist CTAs (no CSS file changes needed) -->
   <style>
+    /* Speaking thumbnails */
     .work__img img {
       width: 100%;
       height: 220px;
@@ -17,6 +18,8 @@
     @media screen and (min-width: 768px) {
       .work__img img { height: 200px; }
     }
+
+    /* Project images (general) */
     .skills__img {
       width: 100%;
       height: 280px;
@@ -25,6 +28,46 @@
     @media screen and (min-width: 768px) {
       .skills__img { height: 320px; }
     }
+
+    /* DO NOT crop the map image */
+    .skills__img--map{
+      height: auto !important;
+      object-fit: contain !important;
+    }
+
+    /* One-column project blocks (when images removed) */
+    .skills__container.one-col{
+      grid-template-columns: 1fr !important;
+      text-align: left;
+    }
+
+    /* Minimal CTA buttons (top + bottom) */
+    .cta-stack{
+      display:flex;
+      flex-direction:column;
+      gap:12px;
+      margin-top:1.25rem;
+      max-width:320px;
+    }
+    .cta-min{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      padding:0.65rem 1.25rem;
+      border-radius:10px;
+      font-weight:600;
+      background:#fff;
+      color: rgba(18,18,18,0.92);
+      border:1px solid rgba(18,18,18,0.18);
+      box-shadow:none;
+      transition:0.2s;
+    }
+    .cta-min:hover{
+      border-color: rgba(18,18,18,0.35);
+      transform: translateY(-1px);
+    }
+    .cta-min i{ font-size:1.1rem; }
   </style>
 </head>
 
@@ -33,14 +76,12 @@
   <header class="l-header">
     <nav class="nav bd-grid">
       <div>
-        <!-- Start from About -->
         <a href="#about" class="nav__logo">Zeineb Chabchoub</a>
       </div>
 
       <div class="nav__menu" id="nav-menu">
         <ul class="nav__list">
-          <!-- Removed Home -->
-          <li class="nav__item"><a href="#about" class="nav__link active-link"></a></li>
+          <li class="nav__item"><a href="#about" class="nav__link active-link">About</a></li>
           <li class="nav__item"><a href="#case-studies" class="nav__link">Selected Projects</a></li>
           <li class="nav__item"><a href="#speaking" class="nav__link">Speaking</a></li>
           <li class="nav__item"><a href="#contact" class="nav__link">Let’s connect</a></li>
@@ -83,6 +124,7 @@
           <p style="margin-top:0.75rem;">
             <strong>Languages:</strong> Arabic (native) · English · French
           </p>
+
           <p style="margin-top:0.9rem;">
             Reference could be provided upon request —
             <a
@@ -95,42 +137,38 @@
             </a>.
           </p>
 
-          <!-- CTA buttons (same layout as Home) -->
-          <div style="margin-top:1.5rem;">
+          <!-- Minimal, vertical CTAs -->
+          <div class="cta-stack">
             <a
               href="https://calendly.com/zeinebch/1-1-zeineb"
-              class="button"
+              class="cta-min"
               target="_blank"
               rel="noopener"
             >
-              <i class='bx bx-calendar-event' style="margin-right:8px;"></i>
+              <i class='bx bx-calendar-event'></i>
               Book a meeting
             </a>
 
             <a
               href="https://www.linkedin.com/in/zeineb-chabchoub/"
-              class="button"
+              class="cta-min"
               target="_blank"
               rel="noopener"
-              style="margin-left:0.75rem;"
             >
-              <i class='bx bxl-linkedin' style="margin-right:8px;"></i>
+              <i class='bx bxl-linkedin'></i>
               LinkedIn
             </a>
 
             <a
               href="https://medium.com/@zeineb.chabchoub.01"
-              class="button"
+              class="cta-min"
               target="_blank"
               rel="noopener"
-              style="margin-left:0.75rem;"
             >
-              <i class='bx bx-link-external' style="margin-right:8px;"></i>
+              <i class='bx bx-link-external'></i>
               Medium
             </a>
           </div>
-
-          
         </div>
       </div>
     </section>
@@ -187,14 +225,12 @@
         </div>
 
         <div>
-          <img src="assets/img/map.png" alt="U Venture Ecosystem Map" class="skills__img" />
+          <img src="assets/img/map.png" alt="U Venture Ecosystem Map" class="skills__img skills__img--map" />
         </div>
       </div>
 
-      <!-- MBA Consulting Projects -->
-      <div class="skills__container bd-grid">
-      
-
+      <!-- MBA Consulting Projects (no image) -->
+      <div class="skills__container bd-grid one-col">
         <div>
           <h2 class="skills__subtitle">David Eccles School of Business</h2>
           <p class="skills__text">
@@ -215,176 +251,176 @@
         </div>
       </div>
 
-    <!-- GIZ Tunisia -->
-<div class="skills__container bd-grid">
+      <!-- Transition: GIZ Tunisia -->
+      <div class="bd-grid" style="margin:2.25rem auto 1.25rem;">
+        <h3 style="text-align:center; font-weight:600; margin-bottom:0.5rem;">GIZ Tunisia</h3>
+        <div style="height:1px; background:rgba(18,18,18,0.12);"></div>
+      </div>
 
-  <div>
-    <h2 class="skills__subtitle">Digital Transformation Center — GIZ Tunisia</h2>
-    <p class="skills__text">
-      Startup Ecosystem Partner / Project Manager<br />
-      Over three years, my work followed a simple thesis: <em>startups are engines of the digital economy—but only if capital, markets, and expertise move together.</em><br />
-      <strong>Overall impact:</strong> 2,000+ innovators and 30+ startup support organizations.
-    </p>
+      <!-- GIZ Tunisia (no image) -->
+      <div class="skills__container bd-grid one-col">
+        <div>
+          <h2 class="skills__subtitle">Digital Transformation Center — GIZ Tunisia</h2>
+          <p class="skills__text">
+            Startup Ecosystem Partner / Project Manager<br />
+            Over three years, my work followed a simple thesis: <em>startups are engines of the digital economy—but only if capital, markets, and expertise move together.</em><br />
+            <strong>Overall impact:</strong> 2,000+ innovators and 30+ startup support organizations.
+          </p>
 
-    <p style="margin-top:0.75rem;"><strong>Access to Finance — Flywheel (National Innovation Fund)</strong></p>
-    <p class="skills__text" style="margin-bottom:0.75rem;">
-      Role: Project Manager (GIZ) & Jury Member<br />
-      Stakeholders: GIZ · World Bank · CDC (Caisse des Dépôts et Consignations)
-    </p>
+          <p style="margin-top:0.75rem;"><strong>Access to Finance — Flywheel (National Innovation Fund)</strong></p>
+          <p class="skills__text" style="margin-bottom:0.75rem;">
+            Role: Project Manager (GIZ) & Jury Member<br />
+            Stakeholders: GIZ · World Bank · CDC (Caisse des Dépôts et Consignations)
+          </p>
 
-    <p style="margin-top:0.5rem;"><strong>Challenge</strong></p>
-    <p class="skills__text" style="margin-bottom:0.75rem;">
-      Founders faced a persistent valley of death: limited friends-and-family capital, weak POC funding, and under-resourced incubators struggling to deliver sustained value.
-    </p>
+          <p style="margin-top:0.5rem;"><strong>Challenge</strong></p>
+          <p class="skills__text" style="margin-bottom:0.75rem;">
+            Founders faced a persistent valley of death: limited friends-and-family capital, weak POC funding, and under-resourced incubators struggling to deliver sustained value.
+          </p>
 
-    <p style="margin-top:0.5rem;"><strong>My role</strong></p>
-    <ul>
-      <li>Represented GIZ’s Digital Transformation Center and led fund governance, selection and diligence, disbursements, and KPI monitoring.</li>
-      <li>Served as jury member for funding rounds across multiple instruments.</li>
-    </ul>
+          <p style="margin-top:0.5rem;"><strong>My role</strong></p>
+          <ul>
+            <li>Represented GIZ’s Digital Transformation Center and led fund governance, selection and diligence, disbursements, and KPI monitoring.</li>
+            <li>Served as jury member for funding rounds across multiple instruments.</li>
+          </ul>
 
-    <p style="margin-top:0.75rem;"><strong>Instruments</strong></p>
-    <ul>
-      <li><strong>AIR:</strong> POC development grants for startups</li>
-      <li><strong>AIR²:</strong> Investment-readiness grants</li>
-      <li><strong>DEAL:</strong> Program-launch grants for SSOs (up to 200k TND)</li>
-      <li><strong>SAIL:</strong> Continuity subsidies for high-performing SSOs</li>
-    </ul>
+          <p style="margin-top:0.75rem;"><strong>Instruments</strong></p>
+          <ul>
+            <li><strong>AIR:</strong> POC development grants for startups</li>
+            <li><strong>AIR²:</strong> Investment-readiness grants</li>
+            <li><strong>DEAL:</strong> Program-launch grants for SSOs (up to 200k TND)</li>
+            <li><strong>SAIL:</strong> Continuity subsidies for high-performing SSOs</li>
+          </ul>
 
-    <p style="margin-top:0.5rem;">
-      <a href="https://startup.gov.tn/en/startup_ecosystem/flywheel" target="_blank" rel="noopener">
-        Flywheel – National Innovation Fund
-      </a>
-    </p>
+          <p style="margin-top:0.5rem;">
+            <a href="https://startup.gov.tn/en/startup_ecosystem/flywheel" target="_blank" rel="noopener">
+              Flywheel – National Innovation Fund
+            </a>
+          </p>
 
-    <!-- Subsections divider -->
-    <div style="height:1px; background:rgba(18,18,18,0.12); margin:1.25rem 0;"></div>
+          <div style="height:1px; background:rgba(18,18,18,0.12); margin:1.25rem 0;"></div>
 
-    <p><strong>Access to Markets — Local & International</strong></p>
+          <p><strong>Access to Markets — Local & International</strong></p>
 
-    <p style="margin-top:0.5rem;"><strong>STRIDE — Regional Expansion Program (Tunisia → Africa)</strong></p>
-    <p class="skills__text" style="margin-bottom:0.75rem;">
-      Role: Program Designer & Co-Lead · Duration / Budget: 14 months · €330k
-    </p>
+          <p style="margin-top:0.5rem;"><strong>STRIDE — Regional Expansion Program (Tunisia → Africa)</strong></p>
+          <p class="skills__text" style="margin-bottom:0.75rem;">
+            Role: Program Designer & Co-Lead · Duration / Budget: 14 months · €330k
+          </p>
 
-    <p style="margin-top:0.5rem;"><strong>Challenge</strong></p>
-    <p class="skills__text" style="margin-bottom:0.75rem;">
-      African markets were geographically close but operationally hard to enter for Tunisian founders.
-    </p>
+          <p style="margin-top:0.5rem;"><strong>Challenge</strong></p>
+          <p class="skills__text" style="margin-bottom:0.75rem;">
+            African markets were geographically close but operationally hard to enter for Tunisian founders.
+          </p>
 
-    <p style="margin-top:0.5rem;"><strong>What we built</strong></p>
-    <ul>
-      <li>Full-funnel expansion pathway: 60 founders trained → 15 expansion-ready cases → 5 concrete market entries</li>
-      <li>Leveraged Westerwelle Foundation hubs in Tunis, Kigali, Mombasa, and Arusha</li>
-      <li>Integrated Slush’D Tunisia as part of the market-access strategy</li>
-    </ul>
+          <p style="margin-top:0.5rem;"><strong>What we built</strong></p>
+          <ul>
+            <li>Full-funnel expansion pathway: 60 founders trained → 15 expansion-ready cases → 5 concrete market entries</li>
+            <li>Leveraged Westerwelle Foundation hubs in Tunis, Kigali, Mombasa, and Arusha</li>
+            <li>Integrated Slush’D Tunisia as part of the market-access strategy</li>
+          </ul>
 
-    <p style="margin-top:0.5rem;"><strong>Results</strong></p>
-    <ul>
-      <li>Market entries, partner MoUs, and an open-source Market Entry Toolkit</li>
-    </ul>
+          <p style="margin-top:0.5rem;"><strong>Results</strong></p>
+          <ul>
+            <li>Market entries, partner MoUs, and an open-source Market Entry Toolkit</li>
+          </ul>
 
-    <p style="margin-top:0.5rem;">
-      <a href="https://westerwelle-foundation.com/stride/" target="_blank" rel="noopener">
-        STRIDE – Regional Expansion Program
-      </a>
-    </p>
+          <p style="margin-top:0.5rem;">
+            <a href="https://westerwelle-foundation.com/stride/" target="_blank" rel="noopener">
+              STRIDE – Regional Expansion Program
+            </a>
+          </p>
 
-    <!-- Subsections divider -->
-    <div style="height:1px; background:rgba(18,18,18,0.12); margin:1.25rem 0;"></div>
+          <div style="height:1px; background:rgba(18,18,18,0.12); margin:1.25rem 0;"></div>
 
-    <p><strong>Open Innovation Initiatives — From Matching to PoCs</strong></p>
-    <p class="skills__text" style="margin-bottom:0.75rem;">
-      Role: Program Lead / Co-Designer
-    </p>
+          <p><strong>Open Innovation Initiatives — From Matching to PoCs</strong></p>
+          <p class="skills__text" style="margin-bottom:0.75rem;">
+            Role: Program Lead / Co-Designer
+          </p>
 
-    <p style="margin-top:0.5rem;"><strong>Challenge</strong></p>
-    <p class="skills__text" style="margin-bottom:0.75rem;">
-      B2B startups struggled to break into corporates and SMEs due to slow procurement and unclear entry points.
-    </p>
+          <p style="margin-top:0.5rem;"><strong>Challenge</strong></p>
+          <p class="skills__text" style="margin-bottom:0.75rem;">
+            B2B startups struggled to break into corporates and SMEs due to slow procurement and unclear entry points.
+          </p>
 
-    <p style="margin-top:0.5rem;"><strong>Tracks</strong></p>
-    <ul>
-      <li>Scan & Match (with EY)</li>
-      <li>Link4INN (sector-based open innovation)</li>
-      <li>Start’N’Trade (with CEPEX & Ministry of Commerce)</li>
-    </ul>
+          <p style="margin-top:0.5rem;"><strong>Tracks</strong></p>
+          <ul>
+            <li>Scan & Match (with EY)</li>
+            <li>Link4INN (sector-based open innovation)</li>
+            <li>Start’N’Trade (with CEPEX & Ministry of Commerce)</li>
+          </ul>
 
-    <p style="margin-top:0.5rem;"><strong>What I led</strong></p>
-    <ul>
-      <li>Startup sourcing → matching → PoC design → procurement pathways</li>
-    </ul>
+          <p style="margin-top:0.5rem;"><strong>What I led</strong></p>
+          <ul>
+            <li>Startup sourcing → matching → PoC design → procurement pathways</li>
+          </ul>
 
-    <p style="margin-top:0.5rem;"><strong>Results</strong></p>
-    <ul>
-      <li>5+ PoCs delivered with exporters, manufacturers, and corporates</li>
-    </ul>
+          <p style="margin-top:0.5rem;"><strong>Results</strong></p>
+          <ul>
+            <li>5+ PoCs delivered with exporters, manufacturers, and corporates</li>
+          </ul>
 
-    <p style="margin-top:0.5rem;">
-      <a href="https://share.google/rbJnIT9E8VHI45sL2" target="_blank" rel="noopener">
-        Media: DEMO DAY « Scan & Match » (EY & GIZ Tunisie)
-      </a>
-    </p>
+          <p style="margin-top:0.5rem;">
+            <a href="https://share.google/rbJnIT9E8VHI45sL2" target="_blank" rel="noopener">
+              Media: DEMO DAY « Scan & Match » (EY & GIZ Tunisie)
+            </a>
+          </p>
 
-    <!-- Subsections divider -->
-    <div style="height:1px; background:rgba(18,18,18,0.12); margin:1.25rem 0;"></div>
+          <div style="height:1px; background:rgba(18,18,18,0.12); margin:1.25rem 0;"></div>
 
-    <p><strong>Access to International Markets — Partnerships & Delegations</strong></p>
-    <p class="skills__text" style="margin-bottom:0.75rem;">
-      Role: Partnerships Lead / Delegations Designer
-    </p>
+          <p><strong>Access to International Markets — Partnerships & Delegations</strong></p>
+          <p class="skills__text" style="margin-bottom:0.75rem;">
+            Role: Partnerships Lead / Delegations Designer
+          </p>
 
-    <p style="margin-top:0.5rem;"><strong>Challenge</strong></p>
-    <p class="skills__text" style="margin-bottom:0.75rem;">
-      Increase global visibility and create real routes to investors, pilots, and partners.
-    </p>
+          <p style="margin-top:0.5rem;"><strong>Challenge</strong></p>
+          <p class="skills__text" style="margin-bottom:0.75rem;">
+            Increase global visibility and create real routes to investors, pilots, and partners.
+          </p>
 
-    <p style="margin-top:0.5rem;"><strong>What I did</strong></p>
-    <ul>
-      <li>Designed and executed startup delegations to Web Summit (Lisbon), VivaTech (Paris), African Startup Conference, and GITEX Africa</li>
-      <li>Built a repeatable delegation playbook covering targets, meeting scripts, and follow-ups</li>
-      <li>Represented the Center as a speaker, moderator, and ecosystem liaison across Europe and Africa</li>
-    </ul>
+          <p style="margin-top:0.5rem;"><strong>What I did</strong></p>
+          <ul>
+            <li>Designed and executed startup delegations to Web Summit (Lisbon), VivaTech (Paris), African Startup Conference, and GITEX Africa</li>
+            <li>Built a repeatable delegation playbook covering targets, meeting scripts, and follow-ups</li>
+            <li>Represented the Center as a speaker, moderator, and ecosystem liaison across Europe and Africa</li>
+          </ul>
 
-    <p style="margin-top:0.5rem;"><strong>Results</strong></p>
-    <ul>
-      <li>New investor intros, partner MoUs, and stronger post-event pipelines</li>
-    </ul>
+          <p style="margin-top:0.5rem;"><strong>Results</strong></p>
+          <ul>
+            <li>New investor intros, partner MoUs, and stronger post-event pipelines</li>
+          </ul>
 
-    <!-- Subsections divider -->
-    <div style="height:1px; background:rgba(18,18,18,0.12); margin:1.25rem 0;"></div>
+          <div style="height:1px; background:rgba(18,18,18,0.12); margin:1.25rem 0;"></div>
 
-    <p><strong>Access to Expertise</strong></p>
+          <p><strong>Access to Expertise</strong></p>
 
-    <p style="margin-top:0.5rem;"><strong>CoworkUp — Scaling SSO Capacity</strong></p>
-    <p class="skills__text" style="margin-bottom:0.75rem;">
-      Role: Program Architect & Manager
-    </p>
-    <p class="skills__text" style="margin-bottom:0.75rem;">
-      Founder outcomes depend on the strength of Startup Support Organizations. Capabilities were uneven.
-    </p>
-    <ul>
-      <li>Scaled CoworkUp from a 3-month pilot to a 12-month national program</li>
-      <li>Trained ~90 SSO staff and introduced shared tools, processes, and QA standards</li>
-      <li><strong>Result:</strong> more consistent, higher-quality founder support nationwide</li>
-    </ul>
+          <p style="margin-top:0.5rem;"><strong>CoworkUp — Scaling SSO Capacity</strong></p>
+          <p class="skills__text" style="margin-bottom:0.75rem;">
+            Role: Program Architect & Manager
+          </p>
+          <p class="skills__text" style="margin-bottom:0.75rem;">
+            Founder outcomes depend on the strength of Startup Support Organizations. Capabilities were uneven.
+          </p>
+          <ul>
+            <li>Scaled CoworkUp from a 3-month pilot to a 12-month national program</li>
+            <li>Trained ~90 SSO staff and introduced shared tools, processes, and QA standards</li>
+            <li><strong>Result:</strong> more consistent, higher-quality founder support nationwide</li>
+          </ul>
 
-    <p style="margin-top:0.9rem;"><strong>Go Rise — International Mentoring Program</strong></p>
-    <p class="skills__text" style="margin-bottom:0.75rem;">
-      Role: Designer & Program Manager
-    </p>
-    <ul>
-      <li>Designed a 5-month mentoring program for 24 tech founders, focused on business models, leadership, and expansion planning</li>
-    </ul>
+          <p style="margin-top:0.9rem;"><strong>Go Rise — International Mentoring Program</strong></p>
+          <p class="skills__text" style="margin-bottom:0.75rem;">
+            Role: Designer & Program Manager
+          </p>
+          <ul>
+            <li>Designed a 5-month mentoring program for 24 tech founders, focused on business models, leadership, and expansion planning</li>
+          </ul>
 
-    <p style="margin-top:0.5rem;">
-      <a href="https://humanedge.org.uk/case_study/gorise-mentoring-programme-nurturing-tech-entrepreneurs-in-tunisia/" target="_blank" rel="noopener">
-        Go Rise – Mentoring Program
-      </a>
-    </p>
-  </div>
-</div>
-
+          <p style="margin-top:0.5rem;">
+            <a href="https://humanedge.org.uk/case_study/gorise-mentoring-programme-nurturing-tech-entrepreneurs-in-tunisia/" target="_blank" rel="noopener">
+              Go Rise – Mentoring Program
+            </a>
+          </p>
+        </div>
+      </div>
 
       <!-- Transition: Alien Dimension + Newsletter -->
       <div class="bd-grid" style="margin:2.25rem auto 1.25rem;">
@@ -392,7 +428,7 @@
         <div style="height:1px; background:rgba(18,18,18,0.12);"></div>
       </div>
 
-      <!-- Alien Dimension (minimalist, text-first, no extra article images) -->
+      <!-- Alien Dimension -->
       <div class="skills__container bd-grid">
         <div>
           <h2 class="skills__subtitle">Alien Dimension — AR EdTech (Founder)</h2>
@@ -477,7 +513,7 @@
       </div>
     </section>
 
-    <!--===== CONTACT / REQUEST A MEETING =====-->
+    <!--===== CONTACT =====-->
     <section class="contact section" id="contact">
       <h2 class="section-title">Let’s connect</h2>
 
@@ -490,55 +526,45 @@
         </div>
 
         <div>
-          <div style="margin-bottom:1rem;">
-            <h3 style="margin-bottom:0.25rem;">Book a meeting</h3>
+          <!-- same CTA style as top -->
+          <div class="cta-stack">
             <a
               href="https://calendly.com/zeinebch/1-1-zeineb"
+              class="cta-min"
               target="_blank"
               rel="noopener"
-              class="button"
             >
-              <i class='bx bx-calendar-event' style="margin-right:8px;"></i>
-              Calendly
+              <i class='bx bx-calendar-event'></i>
+              Book a meeting
             </a>
-          </div>
 
-          <div style="margin-bottom:1rem;">
-            <h3 style="margin-bottom:0.25rem;">LinkedIn</h3>
             <a
               href="https://www.linkedin.com/in/zeineb-chabchoub/"
+              class="cta-min"
               target="_blank"
               rel="noopener"
-              class="button"
             >
-              <i class='bx bxl-linkedin' style="margin-right:8px;"></i>
-              Connect on LinkedIn
+              <i class='bx bxl-linkedin'></i>
+              LinkedIn
             </a>
-          </div>
 
-          <div style="margin-bottom:1rem;">
-            <h3 style="margin-bottom:0.25rem;">Medium</h3>
             <a
               href="https://medium.com/@zeineb.chabchoub.01"
+              class="cta-min"
               target="_blank"
               rel="noopener"
-              class="button"
             >
-              <i class='bx bx-link-external' style="margin-right:8px;"></i>
-              Read on Medium
+              <i class='bx bx-link-external'></i>
+              Medium
             </a>
-          </div>
 
-          <div style="margin-bottom:1rem;">
-            <h3 style="margin-bottom:0.25rem;">Reference</h3>
-            <p style="margin-bottom:0.5rem;">Reference could be provided upon request.</p>
             <a
               href="https://calendly.com/zeinebch/1-1-zeineb"
+              class="cta-min"
               target="_blank"
               rel="noopener"
-              class="button"
             >
-              <i class='bx bx-badge-check' style="margin-right:8px;"></i>
+              <i class='bx bx-badge-check'></i>
               Request a reference
             </a>
           </div>
